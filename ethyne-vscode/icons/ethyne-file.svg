@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 180">
+  <!-- Upper triangle (top point of gem) -->
+  <polygon points="50,2 20,52 80,52" fill="#2D27A8"/>
+  <!-- Rectangle body -->
+  <rect x="20" y="52" width="60" height="80" fill="#2D27A8"/>
+  <!-- Inner white triangle (cutout/window in the body) -->
+  <polygon points="50,88 22,130 78,130" fill="white"/>
+  <!-- Lower triangle (bottom point) -->
+  <polygon points="20,130 80,130 50,178" fill="#3A35CC"/>
+  <!-- Top separator line -->
+  <line x1="18" y1="52" x2="82" y2="52" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <!-- Bottom separator line -->
+  <line x1="18" y1="130" x2="82" y2="130" stroke="white" stroke-width="1.5" opacity="0.6"/>
+</svg>

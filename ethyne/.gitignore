@@ -1,0 +1,13 @@
+node_modules/
+out.js
+dist/
+coverage/
+
+.vscode/
+.idea/
+
+*.log
+*.tmp
+
+.DS_Store
+Thumbs.db

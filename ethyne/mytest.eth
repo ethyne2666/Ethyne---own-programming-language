@@ -1,0 +1,18 @@
+!! My first Ethyne program
+pet name = "Charan" '
+pet age = 20 '
+
+yen age >= 18 {
+    bol "Welcome, " + name '
+} lek {
+    bol "Too young" '
+}
+
+kar factorial(n) {
+    yen n <= 1 {
+        dena 1 '
+    }
+    dena n * factorial(n - 1) '
+}
+
+bol factorial(5) '

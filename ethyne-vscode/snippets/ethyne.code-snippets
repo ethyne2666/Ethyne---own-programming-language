@@ -1,0 +1,86 @@
+{
+  "Variable declaration": {
+    "prefix": "pet",
+    "body": ["pet ${1:name} = ${2:value} '"],
+    "description": "Declare a variable in Ethyne"
+  },
+  "Print statement": {
+    "prefix": "bol",
+    "body": ["bol ${1:expression} '"],
+    "description": "Print a value in Ethyne"
+  },
+  "If statement": {
+    "prefix": "yen",
+    "body": [
+      "yen ${1:condition} {",
+      "\t${2:bol \"true\" '}",
+      "}"
+    ],
+    "description": "If statement in Ethyne"
+  },
+  "If-else statement": {
+    "prefix": "yenek",
+    "body": [
+      "yen ${1:condition} {",
+      "\t${2:bol \"true\" '}",
+      "} lek {",
+      "\t${3:bol \"false\" '}",
+      "}"
+    ],
+    "description": "If-else statement in Ethyne"
+  },
+  "While loop": {
+    "prefix": "jado",
+    "body": [
+      "jado ${1:condition} {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "While loop in Ethyne"
+  },
+  "Function declaration": {
+    "prefix": "kar",
+    "body": [
+      "kar ${1:functionName}(${2:params}) {",
+      "\t${3:bol \"hello\" '}",
+      "\tdena ${4:result} '",
+      "}"
+    ],
+    "description": "Declare a function in Ethyne"
+  },
+  "Return statement": {
+    "prefix": "dena",
+    "body": ["dena ${1:value} '"],
+    "description": "Return a value from a function in Ethyne"
+  },
+  "Input": {
+    "prefix": "adg",
+    "body": ["adg ${1:varName}, \"${2:Enter value: }\" '"],
+    "description": "Read user input in Ethyne"
+  },
+  "Single line comment": {
+    "prefix": "!!",
+    "body": ["!! ${1:comment}"],
+    "description": "Single line comment"
+  },
+  "Block comment": {
+    "prefix": "!!!",
+    "body": [
+      "!!!",
+      "${1:comment}",
+      "!!!"
+    ],
+    "description": "Multi-line block comment"
+  },
+  "Counter loop": {
+    "prefix": "loop",
+    "body": [
+      "pet ${1:i} = 0 '",
+      "jado ${1:i} < ${2:10} {",
+      "\t${3:bol ${1:i} '}",
+      "\t${1:i} = ${1:i} + 1 '",
+      "}"
+    ],
+    "description": "A standard counter loop"
+  }
+}

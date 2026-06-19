@@ -1,0 +1,12 @@
+{
+  "iconDefinitions": {
+    "_ethyne_file": {
+      "iconPath": "./ethyne-file.svg"
+    }
+  },
+  "fileExtensions": {
+    "eth": "_ethyne_file"
+  },
+  "fileNames": {},
+  "file": "_ethyne_file"
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Ethyne",
+  "scopeName": "source.ethyne",
+  "fileTypes": ["eth"],
+  "patterns": [
+    { "include": "#block-comment" },
+    { "include": "#line-comment" },
+    { "include": "#string" },
+    { "include": "#number" },
+    { "include": "#boolean-null" },
+    { "include": "#keyword" },
+    { "include": "#function-call" },
+    { "include": "#identifier" },
+    { "include": "#operator" },
+    { "include": "#punctuation" }
+  ],
+  "repository": {
+
+    "block-comment": {
+      "name": "comment.block.ethyne",
+      "begin": "!!!",
+      "end": "!!!",
+      "patterns": []
+    },
+
+    "line-comment": {
+      "name": "comment.line.ethyne",
+      "match": "!!.*$"
+    },
+
+    "string": {
+      "name": "string.quoted.double.ethyne",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.ethyne",
+          "match": "\\\\[ntr\"\\\\]"
+        }
+      ]
+    },
+
+    "number": {
+      "name": "constant.numeric.ethyne",
+      "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+    },
+
+    "boolean-null": {
+      "name": "constant.language.ethyne",
+      "match": "\\b(tru|nahi|kali)\\b"
+    },
+
+    "keyword": {
+      "patterns": [
+        {
+          "name": "keyword.control.ethyne",
+          "match": "\\b(yen|lek|jado)\\b"
+        },
+        {
+          "name": "keyword.declaration.ethyne",
+          "match": "\\b(pet|kar)\\b"
+        },
+        {
+          "name": "keyword.other.ethyne",
+          "match": "\\b(bol|adg|dena)\\b"
+        }
+      ]
+    },
+
+    "function-call": {
+      "name": "entity.name.function.ethyne",
+      "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=\\()"
+    },
+
+    "identifier": {
+      "name": "variable.other.ethyne",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+
+    "operator": {
+      "name": "keyword.operator.ethyne",
+      "match": "(==|!=|<=|>=|&&|\\|\\||[+\\-*/%=<>!])"
+    },
+
+    "punctuation": {
+      "patterns": [
+        {
+          "name": "punctuation.terminator.ethyne",
+          "match": "'|~"
+        },
+        {
+          "name": "punctuation.section.ethyne",
+          "match": "[{}()\\[\\],]"
+        }
+      ]
+    }
+  }
+}

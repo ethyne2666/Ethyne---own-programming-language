@@ -1,0 +1,19 @@
+{
+  "name": "ethyne-lang",
+  "version": "0.1.0",
+  "description": "The Ethyne programming language — a fun, serious language by Charan / Ethyne brand",
+  "main": "src/compiler.js",
+  "bin": {
+    "ethyne": "./cli.js"
+  },
+  "scripts": {
+    "start":   "node cli.js",
+    "test":    "node tests/runner.js"
+  },
+  "keywords": ["ethyne", "language", "compiler", "interpreter"],
+  "author": "Charan (Ethyne)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

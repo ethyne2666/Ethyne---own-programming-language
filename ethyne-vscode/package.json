@@ -1,0 +1,58 @@
+{
+  "name": "ethyne-lang",
+  "displayName": "Ethyne Language",
+  "description": "Syntax highlighting, file icons, and language support for the Ethyne programming language",
+  "version": "0.1.0",
+  "publisher": "ethyne",
+  "icon": "icons/ethyne-file.png",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes"
+  ],
+  "keywords": ["ethyne", "eth", "language", "syntax"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethyne2666/ethyne-lang"
+  },
+  "contributes": {
+
+    "languages": [
+      {
+        "id": "ethyne",
+        "aliases": ["Ethyne", "ethyne"],
+        "extensions": [".eth"],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/ethyne-file.svg",
+          "dark":  "./icons/ethyne-file.svg"
+        }
+      }
+    ],
+
+    "grammars": [
+      {
+        "language": "ethyne",
+        "scopeName": "source.ethyne",
+        "path": "./syntaxes/ethyne.tmLanguage.json"
+      }
+    ],
+
+    "iconThemes": [
+      {
+        "id": "ethyne-icons",
+        "label": "Ethyne Icons",
+        "path": "./icons/ethyne-icon-theme.json"
+      }
+    ],
+
+    "snippets": [
+      {
+        "language": "ethyne",
+        "path": "./snippets/ethyne.code-snippets"
+      }
+    ]
+  }
+}

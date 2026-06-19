@@ -1,0 +1,68 @@
+!! Ethyne Language — Feature Demo
+!! Single-line comment
+
+!!!
+  Multi-line comment
+  This file shows most Ethyne syntax
+!!!
+
+!! ─── Variables ──────────────────────────────
+pet name = "Charan" '
+pet age  = 20 '
+pet pi   = 3.14 '
+pet flag = tru '
+pet empty = kali '
+
+!! ─── Print ───────────────────────────────────
+bol "Hello from Ethyne!" '
+bol name '
+bol age '
+
+!! ─── Arithmetic ──────────────────────────────
+pet x = 10 '
+pet y = 3  '
+bol x + y  '
+bol x - y  '
+bol x * y  '
+bol x / y  '
+bol x % y  '
+
+!! ─── If / lek ────────────────────────────────
+yen age >= 18 {
+    bol "Adult" '
+} lek {
+    bol "Minor" '
+}
+
+!! ─── While loop ──────────────────────────────
+pet i = 0 '
+jado i < 5 {
+    bol i '
+    i = i + 1 '
+}
+
+!! ─── Function ────────────────────────────────
+kar greet(person) {
+    bol "Hey, " + person '
+}
+
+greet("Ethyne") '
+
+!! ─── Function with return value ──────────────
+kar square(n) {
+    dena n * n '
+}
+
+pet result = square(7) '
+bol result '
+
+!! ─── Nested if ───────────────────────────────
+pet score = 85 '
+
+yen score >= 90 {
+    bol "A grade" '
+} lek yen score >= 75 {
+    bol "B grade" '
+} lek {
+    bol "C grade" '
+}
